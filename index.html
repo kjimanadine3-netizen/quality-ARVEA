@@ -1,90 +1,94 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Mon premier site</title>
-</head>
-<body>
-    <h1>Bienvenue sur mon site 🎉</h1>
-    <p>Ceci est mon premier site web !</p>
-</body>
-</html>
-
-<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Mon site pro</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon Portfolio</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial;
-            background: #f4f4f4;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+}
 
-        header {
-            background: #1976d2;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+header {
+    background: #020617;
+    padding: 20px;
+    text-align: center;
+}
 
-        nav {
-            background: #0d47a1;
-            padding: 10px;
-            text-align: center;
-        }
+nav {
+    margin-top: 10px;
+}
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+nav a {
+    color: #38bdf8;
+    margin: 0 15px;
+    text-decoration: none;
+}
 
-        section {
-            padding: 40px;
-            text-align: center;
-        }
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
 
-        footer {
-            background: #1976d2;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+.hero h1 {
+    font-size: 40px;
+}
+
+.btn {
+    background: #38bdf8;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>Mon site professionnel 🚀</h1>
-    <p>Bienvenue sur mon premier vrai site</p>
+    <h1>Mon Portfolio 🚀</h1>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="about.html">À propos</a>
+    </nav>
 </header>
 
-<nav>
-    <a href="#">Accueil</a>
-    <a href="about.html">À propos</a>
-</nav>
+<div class="hero">
+    <h1>Je suis futur développeur 💻</h1>
+    <p>Je crée des sites modernes</p>
+    <a class="btn" href="about.html">Découvrir</a>
+</div>
 
 <section>
-    <h2>Qui suis-je ?</h2>
-    <p>Je suis en train d'apprendre le développement web.</p>
+    <h2>Mes compétences</h2>
 
-    <h2>Mes objectifs</h2>
-    <p>Créer des sites modernes et professionnels.</p>
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">GitHub</div>
 </section>
-
-<footer>
-    <p>© 2026 Mon site</p>
-</footer>
 
 </body>
 </html>
-<img src="https://via.placeholder.com/200">
-background: #1976d2;
-<img src="https://via.placeholder.com/200" alt="image">
