@@ -47,3 +47,56 @@ a {
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Suivi Qualité ARVEA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>📊 Suivi Qualité ARVEA</h1>
+  <nav>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#lots">Lots</a>
+    <a href="#nc">Non-conformités</a>
+    <a href="#trace">Traçabilité</a>
+  </nav>
+</header>
+
+<section id="dashboard">
+  <h2>📌 Tableau de bord</h2>
+  <div class="cards">
+    <div class="card">Lots en cours : <span id="totalLots">0</span></div>
+    <div class="card">Conformes : <span id="okLots">0</span></div>
+    <div class="card">Non conformes : <span id="badLots">0</span></div>
+  </div>
+</section>
+
+<section id="lots">
+  <h2>📦 Suivi des lots</h2>
+
+  <input id="lotId" placeholder="Numéro de lot">
+  <input id="pf" placeholder="Produit fini (PF)">
+  <input id="emballage" placeholder="Emballage">
+
+  <button onclick="ajouterLot()">Ajouter lot</button>
+
+  <ul id="listeLots"></ul>
+</section>
+
+<section id="nc">
+  <h2>⚠️ Non-conformités</h2>
+  <div id="listeNC"></div>
+</section>
+
+<section id="trace">
+  <h2>📜 Traçabilité</h2>
+  <div id="historique"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
